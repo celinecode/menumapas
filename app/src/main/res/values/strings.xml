@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MapasMenu</string>
+    <string name="ir_mapas">Ir al Mapa</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="imagenMuseo">Museo</string>
+    <string name="nombreMuseo">Nombre del museo</string>
+</resources>
