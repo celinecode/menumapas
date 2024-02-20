@@ -18,17 +18,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mGridView = findViewById(R.id.grid_view);
-        mGridView.setAdapter(new MuseoAdapter(this));
+        mGridView.setAdapter(new CentroAdapter(this));
 
         mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Museo museo = (Museo) parent.getItemAtPosition(position);
+                Centro centro = (Centro) parent.getItemAtPosition(position);
                 // Launch MapActivity and pass the selected museum position as an extra
                     Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-                    intent.putExtra("selectedMuseumName", museo.getName());
+                    intent.putExtra("selectedMuseumName", centro.getName());
                     startActivity(intent);
             }
         });
