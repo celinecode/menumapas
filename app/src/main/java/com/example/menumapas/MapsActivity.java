@@ -48,12 +48,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Bundle extras = getIntent().getExtras();
         String nombre = extras.getString("selectedMuseumName");
 
-        mMap.addMarker(new MarkerOptions().position(museo).title(nombre)
+        mMap.addMarker(new MarkerOptions().position(centro).title(nombre)
                 .icon(BitmapFromVector(
                         getApplicationContext(),
                         R.drawable.visit)
                 ));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(museo));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(centro));
     }
 
 
